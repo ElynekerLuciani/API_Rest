@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ApiRestModulo1.Domain.Repositories
 {
-    interface IUnitOfWork
+    public interface IUnitOfWork
     {
         Task CompleteAsync();
     }

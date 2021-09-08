@@ -1,14 +1,21 @@
-﻿using ApiRestModulo1.Domain.Repositories;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using ApiRestModulo1.Domain.Repositories;
 using ApiRestModulo1.Domain.Services;
 using ApiRestModulo1.Persistence;
 using ApiRestModulo1.Persistence.Repositories;
 using ApiRestModulo1.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using AutoMapper;
 
 namespace ApiRestModulo1
