@@ -1,4 +1,8 @@
-﻿using ApiRestModulo1.Domain.Repositories;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using ApiRestModulo1.Domain.Repositories;
 using ApiRestModulo1.Domain.Services;
 using ApiRestModulo1.Persistence;
 using ApiRestModulo1.Persistence.Repositories;
@@ -12,10 +16,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using AutoMapper;
 
 namespace ApiRestModulo1
 {
@@ -40,6 +41,9 @@ namespace ApiRestModulo1
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<ICategoryService, CategoryService>();
+
+            services.AddAutoMapper();
+
 
         }
 
